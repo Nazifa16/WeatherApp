@@ -28,6 +28,7 @@ searchBtn.addEventListener("click", () => {
 
   if (!cityName) {
     // Showing error message for empty input
+    container.style.minHeight = "30rem";
     weatherDesc.style.display = "none";
     weatherDetails.style.display = "none";
     errorMessage.style.display = "block";
