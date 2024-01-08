@@ -8,9 +8,7 @@ const textHumidity = document.querySelector("#info-humidity span");
 const textWind = document.querySelector("#info-wind span");
 const errorMessage = document.querySelector("#not-found");
 
-// for icons
-const weatherDesImgDiv = document.querySelector("#weather-des-img-div");
-const weatherDescImg = document.querySelector("#weather-desc-img");
+
 
 //Mapping weather condition
 const icon = {
