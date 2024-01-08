@@ -56,28 +56,27 @@ function getData(name) {
         weatherDesc.style.display = "none";
         weatherDetails.style.display = "none";
         errorMessage.style.display = "block";
+        container.style.minHeight = "30rem";
         searchInpt.value = "";
       } else {
         // Update weather information
         weatherDesc.innerHTML = `
+        <img id="weather-desc-img" src="${
+          icon[json.weather[0].main]
+        }" alt="weather-desc" />
          <h1 >${json.name}</h1>
              <p class="temperature">${Math.round(
                json.main.temp
              )}<span>°C</span></p>
              <p class="desc">${json.weather[0].description}</p>
+             
            `;
         textHumidity.innerText = `${json.main.humidity}%`;
         textWind.innerText = `${json.wind.speed}  km / h`;
 
-        // Get the weather condition and set the corresponding icon
-        const weatherCondition = json.weather[0].main; // weather conditions:clouds,clear etc
-        console.log("Image URL:", icon[weatherCondition]);
-        // Get the weather condition and set the corresponding icon
-        weatherDescImg.src = `${icon[weatherCondition]}`;
-
         //  hide error message, and display weather information
+        container.style.minHeight = "50rem";
         errorMessage.style.display = "none";
-
         weatherDetails.style.display = "flex";
         weatherDesc.style.display = `block`;
         weatherDesImgDiv.style.display = "block";

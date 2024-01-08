@@ -20,7 +20,7 @@ body {
   position: relative;
   color: rgb(255, 255, 255);
   width: 45rem;
-  height: outo;
+  min-height: 10rem;
   border-radius: 1rem;
   padding: 1.25rem;
   background: rgba(135, 236, 163, 0.3);
@@ -86,11 +86,7 @@ body {
 }
 
 /* weather desc img */
-.weather-des-img-div {
-  width: 20%;
-  height: 6.25rem;
-  display: none;
-}
+
 #weather-desc-img {
   width: 60%;
 }
