@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boxicons CSS  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!-- main container -->
+    <div class="container" id="container">
+      <div class="search">
+        <i class="bx bx-map"></i>
+        <input
+          class="search-inpt"
+          id="search-inpt"
+          type="text"
+          placeholder="location"
+        />
+        <button class="bx bx-search search-btn" id="search-btn"></button>
+      </div>
+      <!-- Weather container div    -->
+      <div class="weather-container" id="weather-container">
+        <div class="weather">
+          <div class="weather-info">
+            <!-- icons -->
+            <div class="weather-des-img-div" id="#weather-des-img-div">
+              <img id="weather-desc-img" src="" alt="weather-desc" />
+            </div>
+            <div class="weather-desc" id="weather-desc">
+              <!-- city name,temperature,weather main -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- div for humidity and Wind speed desc -->
+      <div class="weather-details" id="weather-details">
+        <div class="humidity">
+          <i class="bx bx-water"></i>
+          <div class="text">
+            <div class="info-humidity" id="info-humidity">
+              <span></span>
+            </div>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="wind">
+          <i class="bx bx-wind"></i>
+          <div class="text">
+            <div class="info-wind" id="info-wind">
+              <span></span>
+            </div>
+            <p>Wind speed</p>
+          </div>
+        </div>
+      </div>
+      <!-- error message div -->
+      <div class="not-found" id="not-found">
+        <div class="box">
+          <img
+            class="error-message"
+            src="./assets/img/error.png"
+            alt="not-found-png"
+          />
+          <p>Location not found!</p>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

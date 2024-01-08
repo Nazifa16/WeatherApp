@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Domine", serif;
+}
+
+body {
+  background: url("../img/best-weather-app-your-oregon-forest-mountain-background-rain-closeup-pixel-icon-used-bright-shady-dull-dungeon-cartoon-284950251.webp");
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  color: rgb(255, 255, 255);
+  width: 45rem;
+  height: outo;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  background: rgba(135, 236, 163, 0.3);
+  backdrop-filter: blur(2.1875rem);
+  border: 0.125rem solid rgb(102, 185, 130);
+  transition: height 0.6s ease;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.625rem;
+  position: relative;
+  /* background: rgb(146, 221, 231); */
+}
+
+.search i {
+  position: absolute;
+  left: 0.75rem;
+  font-size: 1.875rem;
+  color: 0.125rem solid rgb(102, 185, 130);
+}
+
+.search-inpt {
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  background: transparent;
+  border: 0.125rem solid rgb(42, 225, 103);
+  padding: 0 2.875rem 0 2.5rem;
+  outline: none;
+  border-radius: 1.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.search-inpt::placeholder {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.search-btn {
+  position: absolute;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  font-size: 2rem;
+  background: transparent;
+  padding: 0 0.25rem 0 0.25rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  border: 0.125rem solid rgb(23, 241, 96);
+}
+
+.weather-container {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+/* weather desc img */
+.weather-des-img-div {
+  width: 20%;
+  height: 6.25rem;
+  display: none;
+}
+#weather-desc-img {
+  width: 60%;
+}
+
+.temperature {
+  position: relative;
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 1.25rem 0 0.375rem -1.875rem;
+}
+
+.temperature span {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: 0.25rem;
+}
+
+.desc {
+  font-size: 1.5rem;
+}
+.weather-details {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  width: 100%;
+  padding: 0 1.25rem;
+  /* display: flex; */
+}
+
+.humidity {
+  padding-left: 1.25rem;
+  justify-content: flex-start;
+}
+.humidity,
+.wind {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.weather-details i {
+  font-size: 3.5rem;
+  margin-right: 0.625rem;
+
+  padding-left: 3rem;
+}
+
+.weather-details span {
+  display: inline-block;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+.weather-details p {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* hide */
+
+#weather-details {
+  display: none;
+}
+
+/* not found */
+.not-found {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 6.875rem;
+  text-align: center;
+  display: none;
+}
+
+.not-found img {
+  width: 65%;
+}
+
+.not-found p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0.75rem;
+}
+
+#weather-desc-img {
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+.error-message {
+  width: 6rem;
+  height: 18rem;
+}
+
+.text {
+  padding-bottom: 0.625rem;
+  font-size: 3rem;
+}
