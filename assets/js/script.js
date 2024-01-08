@@ -75,7 +75,7 @@ function getData(name) {
         textWind.innerText = `${json.wind.speed}  km / h`;
 
         //  hide error message, and display weather information
-        container.style.minHeight = "50rem";
+        container.style.minHeight = "40rem";
         errorMessage.style.display = "none";
         weatherDetails.style.display = "flex";
         weatherDesc.style.display = `block`;
